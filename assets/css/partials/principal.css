@@ -1,7 +1,7 @@
-
 html {
     font-size: 16px;
     font-family: 'Poppins';
+    max-width: 120rem;
 }
 
 * {
@@ -498,3 +498,135 @@ a {
         width: 250px;
     }
 } */
+
+/* FOOTER */
+
+.footer {
+    background-color: white;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.title-footer {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'poppins';
+}
+
+.contacta-info,
+.social-icons,
+.information,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.information ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.information ul li {
+    list-style: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'poppins';
+}
+
+.information ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 300;
+}
+
+.information ul li a:hover {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.social-icons span {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i {
+    color: #000000;
+    font-size: 40px;
+}
+
+.content input {
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000000;
+    cursor: pointer;
+    padding: 0.5rem 0 0.5rem;
+    color: #000000;
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: 'poppins';
+}
+
+.content input::-webkit-input-placeholder {
+    color: #b4b4b4;
+}
+
+.content button {
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'poppins';
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.content button:hover {
+    background-color: #000000;
+    color: #dfdfdf;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #c5c5c5;
+}
+
+.copyright p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'poppins';
+}
