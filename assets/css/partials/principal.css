@@ -54,11 +54,11 @@ html {
     cursor: pointer;
 }
 
-.active_menu{
+.active_menu {
     opacity: 1 !important;
     transition: 0.2s;
     display: flex !important;
-  }
+}
 
 /* NAVBAR */
 .container-navbar {
@@ -244,11 +244,12 @@ html {
     color: white;
     text-transform: capitalize;
     position: relative;
-    transition: all 0.4 ease;
+    transition: all 400ms ease;
 }
 
 .card-category:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-category-text {
@@ -345,13 +346,13 @@ html {
 
 .product-box {
     position: relative;
-    transition: box-shadow 0.3s ease;
+    /* transition: box-shadow 0.3s ease; */
     border-radius: 12px;
     width: 240px;
     max-width: 300px;
     padding: 16px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    transition: all 0.4s ease;
+    transition: all 400ms ease;
 }
 
 .product-box:hover {
@@ -389,6 +390,12 @@ html {
     position: absolute;
     padding: 12px;
     font-family: 'Poppins';
+
+}
+
+.discount span {
+    display: grid;
+    place-items: center;
 }
 
 .price {
@@ -648,13 +655,13 @@ a {
 
 
 @media (max-width: 1100px) {
-        
+
     .label_menu {
-    display: block;
-    position: absolute;
-    top: 38px;
-    right: 10px;
-    z-index: 3;
+        display: block;
+        position: absolute;
+        top: 38px;
+        right: 10px;
+        z-index: 3;
     }
 
     .menu {
@@ -674,41 +681,44 @@ a {
         opacity: 0;
         display: none;
         justify-content: initial;
-          
-        }
 
-    .customer-support{
+    }
+
+    .customer-support {
         font-size: 13px;
         gap: 25px;
     }
 }
 
 @media (max-width: 650px) {
-   
-    .container-user{
+
+    .container-user {
         gap: 0;
     }
-    .container-user i{
+
+    .container-user i {
         padding: 0;
-      }
-    .container-navbar{
+    }
+
+    .container-navbar {
         margin: 0;
         margin-right: 50px;
     }
+
     .container-logo h1 a {
         font-size: 18px;
     }
 
-    .label_menu{
+    .label_menu {
         top: 58px;
     }
 
-    .label_menu img{
+    .label_menu img {
         width: 50px;
         height: 50px;
     }
 
-    .customer-support{
+    .customer-support {
         font-size: 10px;
         flex-direction: column;
         padding: 1rem;
@@ -716,6 +726,7 @@ a {
         text-align: center;
     }
 }
+
 /*
 @media (max-width: 650px) {
      .container-user{
