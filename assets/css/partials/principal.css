@@ -667,6 +667,117 @@ a {
     font-family: 'poppins';
 }
 
+/* MEDIA QUERIES -- 768px */
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .content-banner {
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 25rem 0;
+    }
+
+    .heading-1 {
+        font-size: 2.4rem;
+    }
+
+    .container-categories {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 24px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-category {
+        height: 12rem;
+    }
+
+    .card-category p {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .card-category span {
+        font-size: 1.4rem;
+    }
+
+    .container-options {
+        align-items: center;
+    }
+
+    .container-options span {
+        text-align: center;
+    }
+
+    .shop-content {
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    }
+
+    .menu-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+/* MEDIA QUERIES -- 468px */
+
+@media (max-width: 468px) {
+
+    html {
+        font-size: 42.5%;
+    }
+
+    .content-banner {
+        max-width: 50rem;
+        padding: 22rem 0;
+    }
+
+    .heading-1 {
+        font-size: 2.8rem;
+    }
+
+    .container-options span {
+        font-size: 1.8rem;
+        padding: 1rem 1.5rem;
+        font-weight: 500;
+    }
+
+    .shop-content {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    .discount {
+        font-size: 2rem;
+    }
+
+    .contact-info p,
+    .information ul {
+        display: none;
+    }
+
+    .menu-footer {
+        grid-template-columns: 1fr;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+}
+
 
 @media (max-width: 1100px) {
 
