@@ -93,7 +93,9 @@
     height: 50px;
     }
         
-    h3 {
+    .tittle {
+    font-size: 18px;
+    font-weight: bold;
     margin: 10px 0;
     color: #464646;
     }
