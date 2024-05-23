@@ -132,8 +132,8 @@
                </div>
                 <h4 class="contacto_h4">Seguinos en: </h4>
 
-                <a href="https://twitter.com/" title="Twitter" target="_blank"><img
-                        src="../icons/x.png" alt="Twitter" width="40"></a>
+                <!-- <a href="https://twitter.com/" title="Twitter" target="_blank"><img
+                        src="../icons/x.png" alt="Twitter" width="40"></a> -->
                 <a href="https://www.instagram.com/" title="Instagram" target="_blank"><img
                         src="../icons/instagram.png" alt="Instagram" width="40"></a>
                 <a href="https://es-la.facebook.com/" title="Facebook" target="_blank"><img
@@ -144,41 +144,43 @@
 
 
             <!-- formulario contacto -->
-                <div class="grid-item">
-                    <h2 class="contacto_h2">Contacto</h2>
-                    <form id="form_comentario">
-                        <div class="form-group">
-                            <label class="lbl_contacto" for="nombreC">Nombre</label>
-                            <input type="text" class="form-control inputC" id="nombreC" placeholder="Ingrese su nombre">
-                            <span id="errorNombre" class="error"></span>
-                        </div> 
-                        <div class="form-group">
-                            <label class="lbl_contacto" for="emailC">Email</label>
-                            <input type="text" class="form-control inputC" id="emailC"
-                                placeholder="nombre@example.com">
-                            <span id="errorEmail" class="error"></span>
-                        </div>
-                        <div class="form-group">
-                            <label class="lbl_contacto" for="comentario">Comentario</label>
-                            <textarea class="form-control inputC" id="comentario" placeholder="Comentario..."
-                                rows="3"></textarea>
-                            <span id="errorComentario" class="error"></span>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="lbl_contacto">Categoría favorita:</label>
-                            <select id="favorite_category" name="favorite_category" class="form-control">
-                                <option value="estrategia">Familiares</option>
-                                <option value="familiar">Para Adultos</option>
-                                <option value="party">Para Niños</option>
-                            </select>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="subscribe_offers" name="subscribe_offers">
-                            <label class="lbl_contacto form-check-label" for="subscribe_offers">Deseo recibir ofertas y novedades</label>
-                        </div>
-                        <button id="submit" class="boton btn-lg m-auto btn-primary py-1 ">Enviar</button>
-                    </form>
+            <div class="grid-item">
+                <h2 class="contacto_h2">Contacto</h2>
+                <form id="form_comentario" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="lbl_contacto" for="nombreC">Nombre</label>
+                        <input type="text" class="form-control inputC" id="nombreC" placeholder="Ingrese su nombre">
+                        <span id="errorNombre" class="error"></span>
+                    </div> 
+                    <div class="form-group">
+                        <label class="lbl_contacto" for="emailC">Email</label>
+                        <input type="text" class="form-control inputC" id="emailC" placeholder="nombre@example.com">
+                        <span id="errorEmail" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl_contacto" for="comentario">Comentario</label>
+                        <textarea class="form-control inputC" id="comentario" placeholder="Comentario..." rows="3"></textarea>
+                        <span id="errorComentario" class="error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="lbl_contacto">Categoría favorita</label>
+                        <select id="favorite_category" name="favorite_category" class="form-control">
+                            <option value="estrategia">Familiares</option>
+                            <option value="familiar">Para Adultos</option>
+                            <option value="party">Para Niños</option>
+                        </select>
+                    </div>
+                    <div class="form-archivo">
+                        <label class="lbl_contacto" for="imagen">¿Necesitas compartirnos algo?</label>
+                        <input type="file" class="form-control-file" id="imagen" name="imagen" accept=".jpg">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="subscribe_offers" name="subscribe_offers">
+                        <label class="lbl_contacto form-check-label" for="subscribe_offers">Deseo recibir ofertas y novedades</label>
+                    </div>
+                    <button id="submit" class="boton btn-lg m-auto btn-primary py-1">Enviar</button>
+                </form>
                 </div>
             </div>
         

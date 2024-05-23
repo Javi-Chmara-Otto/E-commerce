@@ -36,6 +36,8 @@
 .lbl_contacto {
   color: rgb(23 65 141);
   font-family: "Montserrat", sans-serif;
+  white-space: nowrap;
+  margin-right: 10px;
 }
 
 .contacto_h2 {
@@ -66,6 +68,17 @@ textarea {
 
 .form-check-input {
   margin-right: 5px;
+}
+
+.form-archivo {
+  display: inline-flex;
+  margin-bottom: 0.5rem;
+}
+
+.form-control-file {
+  flex-grow: 1;
+  min-width: 200px;
+  resize: none;
 }
 
 
@@ -158,10 +171,67 @@ input[type=submit]:hover {
 
 }
 
+.btn-primary{
+  margin-right: 1%;
+  margin-left: 1%; 
+}
+ .form-group {
+      margin-right: 1%;
+      margin-left: 1%; 
+  }
+
+ .lbl_contacto {
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+
+  .form-check {
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+  
+  .form-check-input {
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+  
+  .form-archivo {
+
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+  
+  .form-control-file {
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+
 @media screen and (max-width: 600px) {
   input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+
+  .form-check {
+    display: block;
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+  
+  .form-check-input {
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+  
+  .form-archivo {
+    display: inline-block;
+    margin-right: 1%;
+    margin-left: 1%; 
+  }
+  
+  .form-control-file {
+    margin-right: 1%;
+    margin-left: 1%; 
   }
 
 }
