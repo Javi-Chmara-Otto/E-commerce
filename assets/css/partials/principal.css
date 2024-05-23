@@ -25,7 +25,7 @@ html {
     font-size: 30px;
     font-family: 'Poppins';
     padding-top: 80px;
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
 }
 
 .heading-2 {
@@ -795,11 +795,12 @@ a {
         justify-items: center;
     }
 
-    .label_menu{
+    .label_menu {
         top: 39px;
     }
 
 }
+
 /*
 @media (min-width: 776px) and (max-width: 1100px) {
     .menu {
@@ -818,9 +819,9 @@ a {
 }
 
 @media (max-width: 775px) {
-    .menu{
-            width: 18rem !important;
-            padding-top: 13rem !important;
+    .menu {
+        width: 18rem !important;
+        padding-top: 13rem !important;
     }
 
     .label_menu img {
@@ -886,7 +887,8 @@ a {
     }
 
     .label_menu {
-        top: 43px !important;;
+        top: 43px !important;
+        ;
     }
 
 
